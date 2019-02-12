@@ -14,6 +14,7 @@ RUN yum makecache fast \
       sudo \
       which \
       wget \
+      iproute \
  && yum clean all
 
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
